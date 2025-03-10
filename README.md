@@ -8,3 +8,5 @@ Dimensionality Reduction: Leveraging MDS and UMAP to preserve both local and glo
 Text-Based Analysis: Applying TF-IDF to capture important sequence features and relative abundances.
 Biological Insights: Enabling the identification of underlying patterns and clusters in VDJ gene usage for deeper immunological analysis.
 This toolkit aims to facilitate more intuitive data exploration and hypothesis generation in immune repertoire studies.
+
+The reference data in the reference data from the 10x public database.
