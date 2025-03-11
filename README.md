@@ -4,6 +4,9 @@
 
 VDJ-MAP is an innovative visualization toolkit designed for the analysis of V(D)J DNA sequences. It integrates advanced algorithms—including Multi-Dimensional Scaling (MDS), Term Frequency-Inverse Document Frequency (TF-IDF), and (in future releases) Uniform Manifold Approximation and Projection (UMAP)—to map high-dimensional sequence data into a low-dimensional space. This mapping enables researchers to visually explore complex relationships in immune repertoire studies.
 
+![Alt text](vdjmap_cr_vdj.png "Plot of the Cell Ranger VDJ")
+
+
 ## Key Features
 
 - **Dimensionality Reduction:**  
@@ -34,6 +37,8 @@ This script prepares the foundational embedding from reference DNA sequences:
   Filters out low-scoring k-mers (TF-IDF ≤ 0.3) and computes an adjusted Hamming distance matrix, where distances are modulated by the TF-IDF values.
 - **Dimensionality Reduction:**  
   Uses an approximate MDS algorithm to create a 2D embedding, then saves the result in `embedding_table.csv` (including k-mer strings, TF-IDF scores, and 2D coordinates).
+  
+![Alt text](vdjmap_ref.png "Plot of the Cell Ranger Reference")
 
 ### 2. Visualization & Analysis (output_vdj_map.py)
 This script leverages the embedding to visualize and analyze gene-specific data:
