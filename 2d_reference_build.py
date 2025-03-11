@@ -303,6 +303,11 @@ if __name__ == "__main__":
     # Compute combined TF-IDF for k-mers (k=8).
     combined_tf_idf = compute_tf_idf_combined(combined_dna_dict, k=8, weight_factors=weight_factors)
 
+    # Save all k-mers (before filtering) to a CSV file.
+    all_kmers_table = pd.DataFrame(list(combined_tf_idf.items()), columns=['kmer', 'tfidf'])
+    all_kmers_table.to_csv("all_kmers.csv", index=False)
+    print("All k-mers saved as 'all_kmers.csv'")
+
     # Filter TF-IDF scores.
     filtered_tf_idf = {kmer: score for kmer, score in combined_tf_idf.items() if score > 0.3}
 
