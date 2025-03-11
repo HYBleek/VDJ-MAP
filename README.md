@@ -91,6 +91,10 @@ This script leverages the embedding to visualize and analyze gene-specific data:
 
 The reference data utilized by this toolkit is derived from the 10x public database.
 
+## Acknowledgments
+
+This project benefited from suggestions provided by ChatGPT, an AI language model developed by OpenAI, which helped improve code structure and documentation.
+
 ---
 
 For additional information, contributions, or to report issues, please refer to the project documentation and issue tracker.
