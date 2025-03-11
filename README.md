@@ -47,26 +47,7 @@ This script leverages the embedding to visualize and analyze gene-specific data:
   - The number of gene k-mers absent from the overall k-mer dataset.
   - The number of k-mers present in the reference data but missing from the embedding.
   - The ratio of common k-mers, which helps assess the representativeness of the gene segments.
-  
-## Usage Instructions
 
-1. **Prepare Reference Data:**
-   - Ensure that your reference FASTA files (e.g., `regions.fa` and `supp_regions.fa`) are in the repository directory.
-   
-2. **Run the Reference Build:**
-   - Execute the script:
-     ```
-     python 2d_reference_build.py
-     ```
-   - This will compute TF-IDF scores, filter k-mers, generate a 2D embedding via approximate MDS, and create the CSV files (`all_kmers.csv` and `embedding_table.csv`).
-
-3. **Visualize Gene Segments:**
-   - Prepare your gene segments FASTA file.
-   - Run the visualization script:
-     ```
-     python output_vdj_map.py
-     ```
-   - When prompted, provide the name of your gene segments FASTA file. The script will then display an embedding plot and output k-mer statistics.
 
 ## Dependencies
 
