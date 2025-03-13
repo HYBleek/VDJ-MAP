@@ -61,7 +61,7 @@ This script leverages the embedding to visualize and analyze gene-specific data:
 - NumPy
 - Matplotlib
 - PyTorch
-
+Note that there is mMDZ in this code, it takes one A100 about 40 seconds.
 *(Ensure these packages are installed in your environment.)*
 
 ## Future Enhancements
