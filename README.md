@@ -1,6 +1,6 @@
 # VDJ-MAP
 
-**MDS-TFIDF Visualization Tool for V(D)J DNA Data**
+**MDS-TFIDF Visualization Tool for V(D)J Data**
 
 VDJ-MAP is an innovative visualization toolkit designed for the analysis of V(D)J DNA sequences. It integrates advanced algorithms—including Multi-Dimensional Scaling (MDS), Term Frequency-Inverse Document Frequency (TF-IDF), and (in future releases) Uniform Manifold Approximation and Projection (UMAP)—to map high-dimensional sequence data into a low-dimensional space. This mapping enables researchers to visually explore complex relationships in immune repertoire studies.
 
