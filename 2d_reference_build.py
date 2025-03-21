@@ -220,9 +220,9 @@ def compute_adjusted_hamming_distance_matrix(filtered_tf_idf: dict, scaling_fact
     kmer_ints = [[mapping[base] for base in kmer] for kmer in kmers]
     kmer_tensor = torch.tensor(kmer_ints, dtype=torch.int64, device=DEVICE)
     diff = (kmer_tensor.unsqueeze(1) != kmer_tensor.unsqueeze(0)).sum(dim=2)
-    adjustment = (tfidf_scores.unsqueeze(1) + tfidf_scores.unsqueeze(0)) / 2.0
-    adjusted = diff.float() - scaling_factor * adjustment
-    adjusted = torch.clamp(adjusted, min=0.01)
+    adjustment = (torch.log(tfidf_scores.unsqueeze(1)) + torch.log(tfidf_scores.unsqueeze(0))) / 2.0
+    raw_adjusted = diff.float() - scaling_factor * adjustment
+    adjusted = torch.maximum(raw_adjusted, diff.float() / 2)
     return kmers, adjusted.cpu().numpy()
 
 
