@@ -76,6 +76,7 @@ Note that there is mMDZ in this code, it takes one A100 about 40 seconds.
 ## Reference Data
 
 The reference data utilized by this toolkit is derived from the 10x public database.
+- **Human V(D)J Reference (GRCh38):** Human reference (GRCh38/Ensembl/10x) dataset required for Cell Ranger V(D)J. [Download Human Reference](https://www.10xgenomics.com/support/software/cell-ranger/downloads) | File size: 3.3 MB | md5sum: 65b5b033723b07fc1bb5375e5645761c.
 
 ## Acknowledgments
 
