@@ -67,7 +67,7 @@ Note that there is mMDZ in this code, it takes one A100 about 40 seconds.
 ## Future Enhancements
 
 - **UMAP Integration:**  
-  To offer an alternative dimensionality reduction method.
+  To offer an alternative dimensionality reduction method. We need to change the how we assume the location, as the UMAP's structure.
 - **Interactive Features:**  
   Enhanced interactivity in plots and additional exportable analysis reports.
 - **Extended Statistical Analysis:**  
