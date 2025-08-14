@@ -63,7 +63,7 @@ def plot_gene_kmers(embedding_csv: str, gene_file: str, k: int = 8, size_scale: 
       - The point's size is determined by the density of that k-mer among all gene k-mers.
 
     Parameters:
-        embedding_csv: Path to the embedding_table.csv file (must include 'kmer', 'tfidf', 'dim1', 'dim2').
+        embedding_csv: Path to the embedding_table.csv file.
         gene_file: Path to the FASTA file containing gene segments.
         k: Length of the k-mer (default is 8).
         size_scale: Scaling factor to adjust point size from density values.
