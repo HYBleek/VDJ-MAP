@@ -6,7 +6,7 @@ VDJ-MAP is an innovative visualization toolkit designed for the analysis of V(D)
 
 ![Alt text](figure/vdjmap_cr_vdj.png "Plot of the Cell Ranger VDJ")
 
-
+ 
 ## Key Features
 
 - **Dimensionality Reduction:**  
